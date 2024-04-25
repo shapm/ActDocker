@@ -1,0 +1,13 @@
+services:
+  api-roberto:
+    build: .
+    container_name: api-roberto
+    expose:
+      - "8000"
+    ports:
+      - "3003:8000"
+    networks:
+      - roberto
+
+networks:
+  roberto:
